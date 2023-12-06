@@ -1,0 +1,16 @@
+body
+{
+    background-color:  lightgreen;
+}
+
+header
+{
+    display: grid;
+}
+
+main
+{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 70% 30%;
+}
