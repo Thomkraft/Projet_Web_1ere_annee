@@ -11,7 +11,7 @@
     <header>
 
       <h1>Les transports doux à l'université Lyon 1</h1>
-
+      
     </header>
 
     <main>
@@ -27,17 +27,30 @@
         
         <section class="importance">
 
-          <h1>Titre1</h1>
-            <p>p</p>
+          <h2>Inportance des transports doux à l'université Lyon 1</h2>
+            <p>Description de l'importance des transports doux</p>
 
-          <p>Image illustrant</p>
+          <figure>
+
+            <picture>
+              <img src="./Images/tram.webp" alt="Image d'un tram a l'université Lyon1" style="width: 30%;"/>
+            </picture>
+
+            <figcaption>
+              Source :
+              <a href="https://fr.wikipedia.org/wiki/Tramway#/media/Fichier:Alstom_Citadis_302_n%C2%B0859_TCL_Saxe-Pr%C3%A9fecture.jpg">
+                Wikipedia
+              </a>
+            </figcaption>
+
+          </figure>
 
         </section>
 
         <section class="descriptif">
 
-          <h1>D'escription </h1>
-            <p>p</p>
+          <h2>Description </h2>
+            <p>Description du tableau sur le taux d'émission du CO2 des différents transports</p>
 
           <table>
 
@@ -52,9 +65,13 @@
               <td>50</td>
               <td>100%</td>
             </tr>
+
+            <tr>
               <td>Vélo</td>
               <td>50</td>
               <td>100%</td>
+            </tr>
+            
             <tr>
               <td>trottinette</td>
               <td>50</td>
@@ -68,7 +85,7 @@
 
         <section class="avantage">
 
-          <h1>Avantage et inconvénient de différents transports</h1>
+          <h2>Avantage et inconvénient de différents transports</h2>
             
             <section class="voiture">
 
@@ -81,9 +98,9 @@
               </ul>
 
               <ul>
-                <li>Avantage 1</li>
-                <li>Avantage 2</li>
-                <li>Avantage 3</li>
+                <li>inconvénient 1</li>
+                <li>inconvénient 2</li>
+                <li>inconvénient 3</li>
               </ul>
 
             </section> 
@@ -99,9 +116,9 @@
               </ul>
 
               <ul>
-                <li>Avantage 1</li>
-                <li>Avantage 2</li>
-                <li>Avantage 3</li>
+                <li>inconvénient 1</li>
+                <li>inconvénient 2</li>
+                <li>inconvénient 3</li>
               </ul>
               
             </section>
@@ -117,9 +134,9 @@
               </ul>
 
               <ul>
-                <li>Avantage 1</li>
-                <li>Avantage 2</li>
-                <li>Avantage 3</li>
+                <li>inconvénient 1</li>
+                <li>inconvénient 2</li>
+                <li>inconvénient 3</li>
               </ul>
               
             </section>
@@ -133,7 +150,64 @@
 
     <footer>
 
-      <form>
+      <h2>Formulaire</h2>
+
+      <form method="post" action="https://perso.liris.cnrs.fr/pierre-antoine.champin/enseignement/intro-web/_static/formproc/debug">
+
+        <fieldset>
+          
+          <legend>
+            Merci de nous partager vos suggestion pour notre site web :
+          </legend>
+
+          <textarea id="suggestion" name="suggestion" placeholder="Renseigner vos suggestions ici"></textarea>
+        </fieldset>
+
+        <fieldset>
+
+          <legend>
+            Quelle(s) transport(s) utilisez vous lors de vos déplcements a l'université ?
+          </legend>
+
+          <input type="checkbox" id="voiture" name="voiture" value="voiture">
+          <label for="voiture">
+            Voiture
+          </label>
+
+          <input type="checkbox" id="velo" name="velo" value="velo">
+          <label for="velo">
+            Vélo
+          </label>
+
+          <input type="checkbox" id="trottinette" name="trottinette" value="Trottinette">
+          <label for="trottinette">
+            Trottinette
+          </label>
+
+          <label>
+            Autre :
+          </label>
+          <input type="text" id="type_transport" name="text_type">
+
+        </fieldset>
+      
+        <fieldset>
+
+          <legend>
+            Avez vous trouvez vous utile ce site internet ?
+          </legend>
+
+          <input type="radio" id="oui" name="scale" value="oui">
+          <label for="oui">
+            Oui
+          </label>
+
+          <input type="radio" id="non" name="scale" value="non">
+          <label for="non">
+            Non
+          </label>
+
+        </fieldset>
 
         <button type="submit">Submit</button>
 
