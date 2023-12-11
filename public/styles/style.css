@@ -1,0 +1,100 @@
+body {
+    background-color: lightgreen;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2,nav{
+    text-align: center;
+
+    border: solid;
+    border-radius: 50px;
+
+    background-color: lightseagreen;
+
+    padding: 5px;
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+fieldset {
+    border: none;
+}
+
+table,td,th{
+    border: solid;
+
+    border-collapse:collapse ;
+
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    height: 50%;
+}
+
+section > *:not(h2,ul,.avantage section > p){
+    border: solid;
+
+    border-radius: 10px;
+
+    background-color: lightskyblue;
+
+    margin: 10px;
+}
+
+
+@media (min-width:701px){
+    .importance, .descriptif, .avantage{
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 85px 1fr;
+    }
+
+    .importance h2, .descriptif h2,.avantage h2{
+        grid-area: 1/1/1/3;
+    }
+
+
+    form {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    form fieldset:nth-child(1) {
+        grid-area: 1/1/1/3;
+    }
+
+    form fieldset:nth-child(2) {
+        grid-area: 2/1/2/2;
+    }
+
+    form fieldset:nth-child(3) {
+        grid-area: 2/2/2/3;
+    }
+
+    form button {
+        grid-area: 3/1/3/3;
+    }
+}
+
