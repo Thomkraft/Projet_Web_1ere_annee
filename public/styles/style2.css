@@ -1,11 +1,12 @@
 body {
     background-color: rgb(249, 248, 248);
+
+    font-family: sans-serif;
 }
 
-h1, h3{
+h1 {
     text-align: center;
 }
-
 
 h2,nav{
     text-align: center;
@@ -45,9 +46,19 @@ figure {
     text-align: center;
 }
 
-p, .linktcl a, h3{
+p{
+    padding: 5px;
+
+    display: flex;
+
+    justify-content: center;
+    flex-direction: column;
+}
+
+.linktcl a, h3{
     padding: 5px;
 }
+
 
 @media (min-width:701px){
 	main{
@@ -97,6 +108,7 @@ p, .linktcl a, h3{
 		margin: 5px;
 		margin-left:20px;
 	}
+}
 
 @media (max-width:700px){
 	main{
