@@ -1,16 +1,49 @@
-body
-{
-    background-color:  lightgreen;
+body {
+    background-color: rgb(249, 248, 248);
 }
 
-header
-{
-    display: grid;
+h1 {
+    text-align: center;
 }
 
-main
-{
+h2,nav{
+    text-align: center;
+
+    border: solid;
+    border-radius: 50px;
+
+    background-color: lightgreen;
+
+    padding: 5px;
+}
+
+nav {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 1fr 1fr;
+
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+section > *:not(h2,ul,.avantage section > p,figure){
+    border: solid;
+
+    border-radius: 10px;
+
+    background-color: lightskyblue;
+
+    margin: 10px;
+}
+
+figure {
+    text-align: center;
+}
+
+p{
+    padding: 5px;
 }
