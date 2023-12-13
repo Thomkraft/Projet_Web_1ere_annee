@@ -2,9 +2,10 @@ body {
     background-color: rgb(249, 248, 248);
 }
 
-h1 {
+h1, h3{
     text-align: center;
 }
+
 
 h2,nav{
     text-align: center;
@@ -44,6 +45,68 @@ figure {
     text-align: center;
 }
 
-p{
+p, .linktcl a, h3{
     padding: 5px;
+}
+
+@media (min-width:701px){
+	main{
+		display: grid;
+		grid-template-columns: 70% 30%;
+		grid-template-rows: 50% 50%;
+	}
+	
+	.linktcl{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 25% 1fr 25%;
+	}
+	
+	.linktcl *:nth-child(1){
+		grid-area: 1/1/2/2;
+		margin: 5px;
+		margin-right:20px;
+	}
+	
+	.linktcl *:nth-child(2){
+		grid-area: 2/1/3/2;
+		margin: 5px;
+		margin-right:20px;
+	}
+	
+	.linktcl *:nth-child(3){
+		grid-area: 3/1/4/2;
+		margin: 5px;
+		margin-right:20px;
+	}
+	
+	.linktcl *:nth-child(4){
+		grid-area: 1/2/2/3;
+		margin: 5px;
+		margin-left:20px;
+	}
+	
+	.linktcl *:nth-child(5){
+		grid-area: 2/2/3/3;
+		margin: 5px;
+		margin-left:20px;
+	}
+	
+	.linktcl *:nth-child(6){
+		grid-area: 3/2/4/3;
+		margin: 5px;
+		margin-left:20px;
+	}
+
+@media (max-width:700px){
+	main{
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.linktcl{
+		display:flex;
+		flex-direction: column;
+	}
+	
 }
