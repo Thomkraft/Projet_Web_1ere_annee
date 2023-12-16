@@ -31,6 +31,10 @@ img {
     width: 50%;
 }
 
+main {
+    display: inline;
+}
+
 @media (min-width:701px){
     .importance, .descriptif, .avantage{
         display: grid;
