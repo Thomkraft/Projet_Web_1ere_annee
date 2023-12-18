@@ -73,7 +73,7 @@ main {
 }
 
 @media (max-width:700px) {
-    main section,form {
+    main,main section,form {
         display: flex;
 
         flex-direction: column;
